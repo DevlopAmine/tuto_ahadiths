@@ -106,5 +106,8 @@
       }
     }
   },
-  "defaultProject": "MesProduits"
+  "defaultProject": "MesProduits",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,0 +1,8 @@
+<input (input)="searchHadith()" [(ngModel)]="motCle" name="search" placeholder="chercher hadith par mot clé">
+<!--<button class="btn-primary btn btn-info" name="searchValue" (click)="searchHadith()">Vas y</button>-->
+
+<div *ngFor="let had of filteredHadiths" class="container">
+  <p>{{ had.idHadith }} - {{ had.titreHadith }} - <span class="hadith">{{  had.descriptionHadith }} </span> -
+    Rapporteur: {{  had.rapporteur }} - {{had.arabVersion}} </p>
+</div>
+
